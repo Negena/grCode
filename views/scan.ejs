@@ -7,8 +7,17 @@
   </head>
   <body>
     <div class="container">
+      <hr>
+      <h1>Your results</h1>
+      <hr>
       <img src="<%= qr_src %>" alt="qr code">
-      <a href="/" role="button" class="btn btn-danger">BACK</a>
+      <div class="container">
+        <a href="/" role="button" class="btn btn-danger">BACK</a>
+        <a download="<%= qr_src %>.jpg" href="<%= qr_src %>" role="button" class="btn btn-danger">DOWNLOAD</a>
+      </div>
+    <hr>
+      <h2>DECODE:  '<%= input %>'</h2>
+      <a role="button" href=".././user<%=ids %>.pdf" download   class="btn btn-danger">DOWNLOAD A FILE</a>
     </div>
 
   </body>
